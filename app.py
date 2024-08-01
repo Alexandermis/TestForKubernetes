@@ -9,7 +9,7 @@ def basic_route():
     # Print the user data to record it with filebeat
     print(f"Client IP: {client_ip}")
     # return a string
-    return 'Welcome'!'
+    return 'Welcome'
 
 if __name__ == '__main__':
     # Start the testapp
