@@ -3,11 +3,12 @@ from flask import Flask, request
 app = Flask(__name__)
 
 @app.route('/')
-def hello():
+def basic_route():
     # Get some user data
     client_ip = request.headers.get('X-Forwarded-For', request.remote_addr)
     # Print the user data to record it with filebeat
     print(f"Client IP: {client_ip}")
+    # return a string
     return 'Hello, World!'
 
 if __name__ == '__main__':
